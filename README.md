@@ -5,6 +5,9 @@ PLANIT
 ## Description
 Android application developed for my Software Development Practices class along with my team members Tristan Nono, Joshua Gutierez, and Melani Hodge. The app tracks a user's events and allows them to coordinate and compare availability with other members of a group.
 
+## Demo Video
+https://www.youtube.com/watch?v=nnHqzC9BAxg&list=PL6BdlkdKLEB8J5pL2OWCXCARAfUM5MOA5&index=47
+
 ## Visuals
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
