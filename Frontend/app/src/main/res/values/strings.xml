@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="create_event">Create Event</string>
+    <string name="event_type">Event type</string>
+    <string name="event_name">Event name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="create">CREATE</string>
+    <string name="enter_the_event_time">Enter the event time</string>
+    <string name="create_account_link">Create an account</string>
+    <string name="login">Login</string>
+    <string name="homepage_title">Manage your life</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="username">Username</string>
+    <string name="user_email_hint">Enter your username</string>
+    <string name="password_hint">Password</string>
+    <string name="password">Enter your password</string>
+    <string name="welcome">Welcome</string>
+    <string name="delete">Delete</string>
+    <string name="select_date">Date</string>
+    <string name="select_time">00:00</string>
+    <string name="start_time_text">Start time:</string>
+    <string name="end_time_text">End time:</string>
+    <string name="edit">Update</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="Save">Save</string>
+    <string name="user_avatar">user avatar</string>
+    <string name="green_dot">green_dot</string>
+    <string name="online_indicator">Online Indicator</string>
+    <string name="home">Home</string>
+    <string name="notifications">Notifications</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="user_avatar_picture">User avatar picture</string>
+    <string name="user_online_indicator">User online indicator</string>
+    <string name="open_notifications_button">Open notifications button</string>
+    <string name="left_arrow">Left arrow for previous button which takes you to a page that was seen before the current</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_username">Username</string>
+    <string name="email">Email</string>
+    <string name="create_account_password">Password</string>
+    <string name="create_account_button_text">Create account</string>
+    <string name="back">Back</string>
+    <string name="edit_event_name">Edit event name</string>
+    <string name="create_group">Create Group</string>
+    <string name="connect_to_canvas">Connect to Canvas</string>
+    <string name="assignments_page_title">Welcome to Canvas Integration</string>
+    <string name="assignments_page_description">"Paste your Canvas token below. "</string>
+    <string-array name="event_types">
+        <item>Select an event type</item>
+        <item>Private</item>
+        <item>Public</item>
+        <item>Group</item>
+    </string-array>
+
+</resources>

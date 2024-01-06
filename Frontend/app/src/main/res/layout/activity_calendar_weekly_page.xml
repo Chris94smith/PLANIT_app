@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="calendar.CalendarWeeklyPage">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Weekly View"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/menu_calendar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/baseline_menu_24"
+            android:translationX="0dp"
+            android:translationY="0dp" />
+    </LinearLayout>
+
+    <com.example.myapplication.NavBarView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <!-- Sunday -->
+
+        <!-- Monday -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="-8dp"
+            android:orientation="vertical"
+            android:translationX="-45dp"
+            android:translationY="60dp">
+
+            <TextView
+                android:id="@+id/sunText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/sunDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Tuesday -->
+
+        <!-- Wednesday -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="-40dp"
+            android:orientation="vertical"
+            android:translationX="-45dp"
+            android:translationY="92dp">
+
+            <TextView
+                android:id="@+id/monText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/monDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="-72dp"
+            android:orientation="vertical"
+            android:translationX="-35dp"
+            android:translationY="125dp">
+
+            <TextView
+                android:id="@+id/tueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="-104dp"
+            android:orientation="vertical"
+            android:translationX="-30dp"
+            android:translationY="157dp">
+
+            <TextView
+                android:id="@+id/wedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/wedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Thursday -->
+
+        <!-- Friday -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="246dp"
+            android:layout_marginTop="-136dp"
+            android:orientation="vertical"
+            android:translationX="-15dp"
+            android:translationY="189dp">
+
+            <TextView
+                android:id="@+id/thuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/thuDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationX="295dp"
+            android:translationY="53dp">
+
+            <TextView
+                android:id="@+id/friText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/friDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Saturday -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationX="350dp"
+            android:translationY="53dp">
+
+            <TextView
+                android:id="@+id/satText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/satDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/month_text_view"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:text="month"
+            android:textSize="20dp"
+            android:translationX="120dp"
+            android:translationY="0dp" />
+
+        <TextView
+            android:id="@+id/year_text_view"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:translationX="1000dp"
+            android:translationY="-120dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/event_item_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:translationY="140dp" />
+
+        <ImageButton
+            android:id="@+id/prevWeekButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <ImageButton
+            android:id="@+id/nextWeekButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="300dp"
+            android:background="@null"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+    </com.example.myapplication.NavBarView>
+
+</LinearLayout>

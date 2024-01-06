@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="62dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/login_to_your_account"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_username_field"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:autofillHints="user@email.com"
+        android:background="@color/primary_shade"
+        android:ems="10"
+        android:hint="@string/user_email_hint"
+        android:inputType="text"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/login_password_field"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:autofillHints="password"
+        android:background="@color/primary_shade"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primary_color"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:text="@string/create_account_link" />
+
+</LinearLayout>

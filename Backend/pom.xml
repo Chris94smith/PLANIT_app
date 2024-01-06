@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>planIT</groupId>
+  <artifactId>Backend</artifactId>
+  <version>1.0.0</version>
+
+  <!-- To make it a spring boot project -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.2</version>
+    <relativePath/>
+  </parent>
+
+  <name>planIT</name>
+
+  <properties>
+
+    <!-- Generic properties -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>17</java.version>
+
+  </properties>
+
+  <dependencies>
+
+    <!-- Spring Boot Web dependencies -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+
+    <!-- The H2 database dependency -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.200</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- MYSQL dependencies -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.11</version>
+    </dependency>
+
+    <!-- The ORM JPA specs/hibernate impl -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+
+    <!-- Spring Websocket dependencies -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-websocket</artifactId>
+    </dependency>
+
+    <!-- want to create jar files etc -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-common</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>3.3.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- RestAssured -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>5.3.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Hamcrest Matchers (Optional, but often used with RestAssured) -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.2</version> <!-- Replace with the latest version -->
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.1.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.28</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.1</version> <!-- Use the latest version available -->
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <runOrder>alphabetical</runOrder>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>
